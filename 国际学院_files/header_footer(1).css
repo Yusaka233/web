@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑" !important;
+    text-decoration: none;
+}
+
+.mainWrapper {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1200px;
+    background:#FFF;
+    /*border: solid 1px lightgray;*/
+}
+
+header {
+    overflow: hidden;
+    width: 1200px;
+    height: 115px;
+    margin:0 auto;
+}
+
+.logo {
+    display: inline-block;
+    float: left;
+    margin-left: 13%;
+    margin-top: 1%;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.bigTitle {
+    float: left;
+    display: inline-block;
+    width: 34%;
+    margin-top: 1%;
+    margin-left: 0.2%;
+}
+
+.bigTitle img {
+    width: 100%;
+    height:85px;
+}
+
+.language {
+    float: left;
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    background: url(../image/round.png) no-repeat;
+    background-size: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.language a{
+	color: black;
+}
+.language:hover, .language a:hover {
+    color: rgb(229, 68, 42);
+}
+
+.cn {
+    margin-left: 95px;
+    margin-top: 70px;
+}
+
+.en {
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.fill_0 {
+	background:#FFF !important;
+}
+
+.fill_1 {
+	background-color: rgb(25, 148, 164);
+}
+
+.fill_2 {
+	background:#3A4950;
+}
+
+.nav {
+    width: 1200px;
+    height: 50px;
+    margin:0 auto 0;
+    background: rgb(25, 148, 164);
+}
+
+.nav_active {
+    background: rgb(229, 68, 42);
+}
+
+.nav li {
+    float: left;
+    display: inline-block;
+    list-style: none;
+    width: 108px;/* 9% */
+    height: 100%;
+    color: white;
+	font-size: 22px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.nav li:first-child{
+	margin-left: 60px;
+	cursor: pointer;
+}
+
+.nav li:hover{
+	background: rgb(229, 68, 42);
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.nav ul li {
+    float: left;
+    display: inline-block;
+    list-style: none;
+    width: 108px;/* 9% */
+    height: 100%;
+    color: white;
+	font-size: 18px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.nav ul li:first-child{
+	margin-left: 170px;
+	cursor: pointer;
+}
+
+.nav ul li:hover{
+	background: rgb(229, 68, 42);
+}
+
+footer{
+	overflow: hidden;
+	width: 1200px;
+	height: 380px;
+	margin:0 auto;
+	/*background: rgb(25, 148, 164);*/
+	background:#3A4950;
+	text-decoration: none;
+	list-style: none;
+	color: white;
+}
+
+.footNav{
+	width: 60%;
+	height: 15px;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+
+.footNav li{
+	float: left;
+	width: 10%;
+	height: 100%;
+	border-left: solid 1px white;
+	text-align: center;
+}
+
+.footNav li:last-child{
+	border-right: solid 1px white;
+}
+
+.footNav li a{
+	width: 100%;
+	height: 100%;
+	float: left;
+	color: white;
+	font-size: 13px;
+	line-height: 16px;
+	text-align: center;
+}
+
+.links{
+	overflow: hidden;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 40px;
+	font-size: 13px;
+}
+
+.friend{
+	float: left;
+	display: inline-block;
+	margin-left: 120px;
+}
+
+.someLink{
+	float: left;
+	width: 80%;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.someLink a{
+	color: white;
+}
+
+.childLink{
+	display: inline-block;
+	float: left;
+	width: 30%;
+	height: 30px;
+	margin-left: 10px;
+}
+
+.others{
+	margin-top: 50px;
+}
+
+.others p{
+	display: block;
+	font-size: 13px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.others a{
+	text-decoration: none;
+	margin-left: 20px;
+	color: white;
+}
+
+.totop{
+	margin:41px auto 0;
+	text-align: center;
+}
+
+.totop a img{
+	width:50px;
+}
+/*end*/

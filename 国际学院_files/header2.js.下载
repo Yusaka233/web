@@ -1,0 +1,15 @@
+document.writeln("<link rel=\'stylesheet\' type=\'text/css\' href=\'http://international.cqupt.edu.cn/dfiles/201804/css/header_footer.css\'>");
+document.writeln("<header id=\'header\' class=\'\'>");
+document.writeln("    <div class=\'logo\'>");
+document.writeln("        <img src=\'http://international.cqupt.edu.cn/dfiles/201804/image/logo.png\' alt=\'logo\'>");
+document.writeln("    </div>");
+document.writeln("    <div class=\'bigTitle\'>");
+document.writeln("        <img src=\'http://international.cqupt.edu.cn/dfiles/201804/image/bigTitle.png\' alt=\'\'>");
+document.writeln("    </div>");
+document.writeln("    <div class=\'language cn\'>");
+document.writeln("        <li><a href=\'http://international.cqupt.edu.cn/index.htm\' title=\'简体中文\'>简体中文</a></li>");
+document.writeln("    </div>");
+document.writeln("    <div class=\'language en\'>");
+document.writeln("        <li><a href=\'http://international.cqupt.edu.cn/xygk_english.htm\' title=\'English\'>English</a></li>");
+document.writeln("    </div>");
+document.writeln("</header>");

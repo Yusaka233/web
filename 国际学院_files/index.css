@@ -1,0 +1,552 @@
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑" !important;
+    text-decoration: none;
+}*/
+
+html {
+    background: rgba(230, 230, 230, 0.5);
+}
+
+.yzjy{
+    position: fixed;
+    left: 86.3%;
+    top: 37%;
+    width: 150px;
+    height: 318px;
+    z-index: 999999;
+    background: url(../image/yzjy.png) no-repeat;
+    background-size: 100% auto;
+}
+.yzjy p{
+    display: block;
+    width: 80%;
+    height: 44%;
+    margin: 140px auto;
+    font-size: 16px;
+    color: black;
+    line-height: 21px;
+    /* text-indent: 2em;*/
+    word-break: break-word;
+}
+.jxglxt{
+    position: fixed;
+    right: 80.3%;
+    top: 79%;
+    z-index: 999999;
+}
+.jxglxt img{
+	width:250px;
+}
+
+.mainContent {
+    width: 1200px;
+    min-height: 600px;
+    background: white;
+}
+
+
+/*.fill_1{
+	background: rgb(25, 148, 164)
+}*/
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.imgWrapper {
+    width: 400%;
+    height: 100%;
+    transition: margin-left 1s;
+}
+
+.carousel li {
+    width: 25%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    list-style: none;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+object-fit:cover;
+}
+
+.slideBar {
+    position: absolute;
+    height: 5px;
+    top: 90%;
+    left: 38%;
+}
+
+.bar {
+    float: left;
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    margin-left: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.OFFbar {
+    background: gray;
+}
+
+.ONbar {
+    background: white;
+}
+
+.search {
+    width: 100%;
+    height: 60px;
+    background: rgb(229, 229, 229);
+}
+
+#search {
+    float: left;
+    display: inline-block;
+    width: 250px;
+    height: 35px;
+    margin-top: 12.5px;
+    margin-left: 56%;
+}
+
+.searchLogo {
+    float: left;
+    width: 50px;
+    height: 35px;
+    background: rgb(229, 68, 42);
+    margin-top: 12.5px;
+    cursor: pointer;
+}
+
+.search img {
+    /*width: 100%;*/
+    height: 90%;
+    margin-left: 7px;
+    margin-top: 3px;
+}
+
+.news {
+    overflow: hidden;
+    width: 100%;
+    height: 520px;
+    background: url(../image/newsBackground.png) no-repeat;
+    background-size: 80% auto;
+    background-position: 50% 50%;
+}
+
+.newsLogo {
+    width: 80%;
+    height: 45px;
+    background: url(../image/news.png) no-repeat;
+    background-size: auto 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.newsLogo p {
+    margin-left: 7px;
+    color: white;
+    font-size: 25px;
+    line-height: 45px;
+}
+
+.news .up,
+.news .down {
+    width: 80%;
+    height: 33%;
+    margin: 0 auto;
+}
+
+.news .up {
+    margin-top: 95px;
+}
+
+.news .down {
+    margin-top: 32px;
+}
+
+.newsImg {
+    display: inline-block;
+    width: 35%;
+    height: 100%;
+    background: pink;
+}
+
+.newsImg img{
+	width: 100%;
+	height: 100%;
+}
+
+.up .newsImg {
+    float: left;
+}
+
+.down .newsImg {
+    float: right;
+    margin-left: 3%;
+}
+
+.down .newsCon {
+    float: left;
+    margin-left: 1%;
+}
+
+.newsCon {
+    display: inline-block;
+    width: 61%;
+    height: 50%;
+}
+
+.up .newsCon {
+    margin-left: 4%;
+}
+
+.date {
+    display: inline-block;
+    overflow: hidden;
+    width: 20%;
+    height: 100%;
+    background: url(../image/date.png) no-repeat;
+    background-size: auto 75%;
+    background-position: 40px 10px;
+}
+
+.up .date {
+    float: left;
+}
+
+.down .date {
+    float: right;
+    margin-right: 7%;
+    margin-top: -4.6%;
+    /*background-position: 0px 10px;*/
+}
+
+.date p {
+    color: gray;
+    font-size: 15px;
+    margin-left: 48.6px;
+    margin-top: 43px;
+}
+.news_more{
+    position: relative;
+    left:228px;
+    top:-406px;
+    z-index:100;
+    color:#fff;
+}
+.newsTitle {
+    display: inline-block;
+    width: 67%;
+    font-size: 18px;
+    margin-left: 4%;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.newsTitle_up {
+    margin-top: 10px;
+}
+
+.newsTitle:hover{
+	text-decoration-line: underline;
+}
+
+.content {
+    position: relative;
+    display: inline-block;
+    width: 67%;
+    max-height: 36px;
+    font-size: 12px;
+    margin-left: 4%;
+    margin-top: 8px;
+    line-height: 18px;
+    color: gray;
+    overflow: hidden;
+}
+
+.content::after {
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 40px;
+    background: -webkit-linear-gradient(left, transparent, #fff 55%);
+    background: -o-linear-gradient(right, transparent, #fff 55%);
+    background: -moz-linear-gradient(right, transparent, #fff 55%);
+    background: linear-gradient(to right, transparent, #fff 55%);
+}
+
+
+.post {
+    overflow: hidden;
+    width: 100%;
+    height: 168.92px;
+    background: url(../image/postBackground.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.postLogo p {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 10.3%;
+}
+
+.postLogo a {
+    float: right;
+    text-decoration: none;
+    font-size: 13px;
+    text-decoration-line: underline;
+    color: white;
+    line-height: 30px;
+    margin-top: 12px;
+    margin-right: 10.3%;
+}
+
+.postCon {
+    overflow: hidden;
+    height: 110px;
+    margin-top: 10px;
+}
+
+.announcement {
+    height: 30%;
+}
+
+.announcement img {
+    float: left;
+    height: 60%;
+    margin-left: 10.3%;
+    margin-top: 7px;
+}
+
+.announcement a {
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    line-height: 33px;
+    margin-left: 15px;
+}
+
+.announcement a:hover{
+    text-decoration-line: underline;
+}
+
+.announcement .time {
+    float: right;
+    margin-right: 10.3%;
+    color: white;
+}
+
+.enroll {
+    position: relative;
+    width: 100%;
+    height: 435px;
+    background: url(../image/zsxx.png) no-repeat;
+    background-size: 80% auto;
+    background-position: 48% 50%;
+}
+
+.one,
+.two {
+    position: absolute;
+    background: pink;
+    overflow: hidden;
+}
+
+.one img, .two img{
+    width: 100%;
+    height: 100%;
+}
+
+.one {
+    width: 333px;
+    height: 215px;
+    left: 129px;
+    top: 46px;
+}
+
+.two {
+    width: 263px;
+    height: 197px;
+    left: 798px;
+    top: 192px;
+}
+
+.enrollInformation {
+	overflow: hidden;
+    position: absolute;
+    width: 468px;
+    height: 253px;
+    background: white;
+    opacity: 1;
+    left: 393px;
+    top: 94px;
+    border: solid 1px black;
+    z-index:9;
+}
+.informationWrapper{
+	width: 100%;
+	margin-top: 30px;
+}
+.information{
+	width: 80%;
+	margin: 10px 23px;
+        color: black;
+}
+
+.information:first-child{
+    margin-top: 25px;
+}
+
+.information img{
+	float: left;
+	width: 25px;
+	margin-top: 8px;
+	padding-right: 8px;
+}
+
+.information a{
+	display: block;
+	margin-left: 8px;
+	font-size: 15px;
+	line-height: 27px;
+        color: black;
+	word-break: break-word;
+}
+
+.information_more a{
+	display: block;
+	margin-left: 370px;
+	font-size: 13px;
+	line-height: 27px;
+        color: black;
+	word-break: break-word;
+}
+
+.cooperation {
+	position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: 60% auto;
+    background-position: 50% 0%;
+}
+
+.box {
+	position: absolute;
+    width: 150px;
+    height: 130px;
+    -webkit-transform: rotate(60deg);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.box div,
+.box img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box img {
+    /*background: pink;*/
+}
+
+.box>div {
+    overflow: hidden;
+    -webkit-transform: rotate(-120deg);
+}
+
+.box>div>div {
+	position: relative;
+    overflow: hidden;
+    -webkit-transform: rotate(60deg);
+}
+
+.green{
+	left: 29.65%;
+	top: 18%;
+}
+
+.green img{
+	display: block;
+	width: 60%;
+	height: auto;
+	margin: 35% auto;
+}
+
+.green>div>div{
+	background: rgb(25, 148, 164);
+}
+
+.first{
+	left: 19.9%;
+	top: 38.24%;
+}
+
+.second{
+	left: 36.5%;
+	top: 52.4%;
+}
+
+.third{
+	left: 47.0%;
+	top: 0%;
+}
+
+.fourth{
+	left: 46.9%;
+	top: 35.2%;
+}
+
+.fifth{
+	left: 57.4%;
+	top: 17.5%;
+}
+
+.sixth{
+	left: 67.5%;
+	top: 35.2%;
+}
+
+.cover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.36);
+	opacity: 0.7;
+}
+
+.cover:hover{
+	opacity: 1;
+}
+
+.schoolName{
+	display: block;
+	position: absolute;
+	width: 75%;
+	left: 13.3%;
+	top: 35%;
+	text-align: center;
+	color: white;
+	font-size: 15.7px;
+	line-height: 20px;
+}
+
+
+
+/*End*/

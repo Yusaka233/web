@@ -1,0 +1,132 @@
+// 轮播
+
+var carousel = document.querySelector('.carousel');
+var imgWrapper = document.querySelector('.imgWrapper');
+var bars = document.querySelectorAll('.bar');
+
+var barsArr = Array.from(bars);
+var ml = 0
+var index = 0;
+var timer;
+
+function slide() {
+    ml -= 1140;
+    index += 1;
+    if (index > 3) {
+        index = 0;
+    }
+    if (ml < -3420) {
+        ml = 0;
+    }
+    imgWrapper.style.marginLeft = ml + 'px';
+    bars[index].className = 'bar ONbar';
+    if (index === 0) {
+        bars[3].className = 'bar OFFbar';
+    } else {
+        bars[index - 1].className = 'bar OFFbar';
+    }
+    // switch (index) {
+    //     case 0:
+    //         // ml = 0
+    //         bars[0].className = 'bar ONbar';
+    //         bars[1].className = bars[2].className = bars[3].className = 'bar OFFbar';
+    //         break;
+    //     case 1:
+    //         // ml = 1
+    //         bars[1].className = 'bar ONbar';
+    //         bars[0].className = bars[2].className = bars[3].className = 'bar OFFbar';
+    //         break;
+    //     case 2:
+    //         // ml = 2;
+    //         bars[2].className = 'bar ONbar';
+    //         bars[1].className = bars[0].className = bars[3].className = 'bar OFFbar';
+    //         break;
+    //     case 3:
+    //         // ml = 3;
+    //         bars[3].className = 'bar ONbar';
+    //         bars[1].className = bars[2].className = bars[0].className = 'bar OFFbar';
+    //         break;
+    // }
+}
+
+//var timer = setInterval(slide, 4500);
+
+function clickBar(event) {
+    var ele = event.target;
+    ml = -1140 * barsArr.indexOf(ele);
+    imgWrapper.style.marginLeft = ml + 'px';
+    restartTimer();
+    switch (barsArr.indexOf(ele)) {
+        case 0:
+            index = 0;
+            bars[0].className = 'bar ONbar';
+            bars[1].className = bars[2].className = bars[3].className = 'bar OFFbar';
+            break;
+        case 1:
+            index = 1;
+            bars[1].className = 'bar ONbar';
+            bars[0].className = bars[2].className = bars[3].className = 'bar OFFbar';
+            break;
+        case 2:
+            index = 2;
+            bars[2].className = 'bar ONbar';
+            bars[1].className = bars[0].className = bars[3].className = 'bar OFFbar';
+            break;
+        case 3:
+            index = 3;
+            bars[3].className = 'bar ONbar';
+            bars[1].className = bars[2].className = bars[0].className = 'bar OFFbar';
+            break;
+    }
+}
+
+function startTimer() {
+    timer = setInterval(slide, 4500);
+}
+function restartTimer() {
+    clearInterval(timer);
+    startTimer();
+}
+
+startTimer()
+
+for (var i = 0; i < bars.length; i++) {
+    bars[i].addEventListener('click', clickBar, false);
+}
+
+
+var footer = document.querySelector('footer');
+//var fill_2 = document.querySelector('.fill_2');
+//fill_2.style.background = footer.style.background = 'rgb(25, 148, 164)';
+
+
+//添加链接
+var links = {
+    0: "http://international.cqupt.edu.cn/index/hzyx.htm", //美国乔治华盛顿大学
+    1: "http://international.cqupt.edu.cn/info/1197/1943.htm", //美国北亚利桑那大学
+    2: "http://international.cqupt.edu.cn/info/1197/1942.htm", //英国布鲁内尔大学
+    3: "http://international.cqupt.edu.cn/info/1197/1941.htm", //美国斯蒂文斯理工学院
+    4: "http://international.cqupt.edu.cn/info/1197/1940.htm", //美国纽约州立大学阿尔巴尼分校
+    5: "http://international.cqupt.edu.cn/index/hzyx.htm" //法国巴黎电子高等学校
+}
+var box = Array.from(document.querySelectorAll(".cover"));
+var schoolName = Array.from(document.querySelectorAll(".schoolName"));
+
+for (var i = 0; i < box.length; i++) {
+    box[i].addEventListener("click", function(e) {
+        var ele = e.target;
+        if (box.indexOf(ele) === -1) {
+            return;
+        }
+        window.location.href = links[box.indexOf(ele)];
+    })
+    schoolName[i].addEventListener("click", function(e) {
+        var ele = e.target;
+        window.location.href = links[schoolName.indexOf(ele)];
+    })
+
+}
+
+
+
+//End

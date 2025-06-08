@@ -1,0 +1,138 @@
+html {
+    background: rgba(230, 230, 230, 0.5);
+}
+.banner {
+	height: 502px;
+	position: relative;
+}
+
+.banner_inner {
+	height: 452px;
+	position: relative;
+}
+
+.banner img {
+	width: 1200px;
+	height: 452px;
+}
+
+.clickhold {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.searchbanner {
+	height: 50px;
+	background:#E5E5E5;
+}
+
+.searchbanner input {
+	vertical-align: center;
+	line-height: 50px;
+}
+.contentTitle {
+	text-align: center;
+	color:#BFBFBF;
+	font-size: 16px;
+}
+
+.bigtitle {
+	font-weight: bold;
+	color:#6EC6D0;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.in_all{
+	width:900px;
+	height:600px;
+	text-align: center;
+        margin:0 auto;
+}
+.in_header{
+	margin-top:50px;
+	margin-bottom:20px;
+}
+.in_header p{
+	font-size:24px;
+	text-align: center;
+	color:#1994a4;
+}
+
+.download_list{
+	width:900px;
+	min-height:348px;
+	padding-bottom:10px;
+	border-top:1px solid #BFBFBF;
+	padding-bottom:10px;
+	text-align: left;
+        color:#232A34;
+}
+
+.download_list ul{
+	margin:13px 50px 0 43px;
+}
+
+.download_list ul li{
+	width:800px;
+	height:17px;
+	line-height:17px;
+	margin-top:10px;
+	position:relative;
+	/* background:url(../image/point.png) no-repeat left center;*/
+        list-style:none;
+}
+
+#listspan{
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+/*
+.download_list ul li span{
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+*/
+
+.download_list ul li a{
+	margin-left:10px;
+	color:#000;
+}
+
+.download_list ul li a:hover{
+	color:#E5432A;
+}
+
+.page_bar{
+        margin:20px auto !important;
+        width:300px;
+        height:16px;
+}
+
+.PrevDisabled{
+height:20px !important;
+border:solid 1px #6EC6D0 !important;
+}
+
+.Next{
+height:20px !important;
+border:solid 1px #6EC6D0 !important;
+}
+
+.NextDisabled{
+height:20px !important;
+border:solid 1px #6EC6D0 !important;
+}
+
+#gotopagebut{
+border:solid 1px #6EC6D0 !important;
+background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#6EC6D0)) !important;
+background: -moz-linear-gradient( top,#ffffff,#6EC6D0) !important;
+background: -ms-linear-gradient(top,#ffffff 0%,#6EC6D0 100%) !important;
+}
